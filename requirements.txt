@@ -1,7 +1,6 @@
 streamlit
-from streamlit_option_menu import option_menu
-import plotly.graph_objects as go
-from datetime import datetime
-import calendar
-from deta import Deta
-import webapp_db as db
+streamlit_option_menu
+plotly.graph_objects
+datetime
+calendar
+deta
