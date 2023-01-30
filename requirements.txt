@@ -1,6 +1,6 @@
 streamlit
 streamlit_option_menu
-plotly.graph_objects
+plotly
 datetime
 calendar
 deta
