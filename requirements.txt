@@ -1,6 +1,1 @@
 streamlit
-streamlit_option_menu
-plotly
-datetime
-calendar
-deta
