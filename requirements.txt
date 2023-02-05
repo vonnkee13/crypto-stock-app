@@ -1,4 +1,7 @@
 streamlit
-streamlit_option_menu
-plotly
-deta
+pandas
+numpy
+sklearn
+yfinance
+talib
+
