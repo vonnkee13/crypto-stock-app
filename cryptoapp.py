@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import yfinance as yf
+import datetime
 
 
 
@@ -20,8 +21,12 @@ selected_option = st.selectbox("Select a cryptocurrency:", keys)
 st.title("Crypto Buy/Sell Recommendation ({})".format(selected_option))
 
 #Create start and end dates
-start_date = st.date_input("Select start date:")
-end_date = st.date_input("Select end date:")
+
+
+default_start_date = datetime.datetime(2022, 1, 1)
+today = datetime.datetime.now()
+start_date = st.date_input("Select start date:",default=default_start_date)
+end_date = st.date_input("Select end date:",default=today)
 
 st.write("Start date:", start_date)
 st.write("End date:", end_date)
