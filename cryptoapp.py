@@ -25,8 +25,8 @@ st.title("Crypto Buy/Sell Recommendation ({})".format(selected_option))
 
 default_start_date = datetime.datetime(2022, 1, 1)
 today = datetime.datetime.today()
-start_date = st.date_input("Select start date:",default=default_start_date)
-end_date = st.date_input("Select end date:",default=today)
+start_date = st.date_input("Select start date:",value=default_start_date)
+end_date = st.date_input("Select end date:",value=today)
 
 st.write("Start date:", start_date)
 st.write("End date:", end_date)
