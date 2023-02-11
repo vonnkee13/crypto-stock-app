@@ -7,8 +7,8 @@ import datetime
 
 
 # Map crypto to their yfinance tickers
-keys = ['Bitcoin', 'Ethereum', 'Shiba Inu','Chainlink', 'SLP', 'XRP', 'Axie Infinity']
-values = ['BTC-USD', 'ETH-USD', 'SHIB-USD','LINK-USD','SLP-USD', 'XRP-USD', 'AXS-USD']
+keys = ['Bitcoin', 'Ethereum', 'Shiba Inu','Chainlink', 'SLP', 'XRP', 'Axie Infinity','Polygon']
+values = ['BTC-USD', 'ETH-USD', 'SHIB-USD','LINK-USD','SLP-USD', 'XRP-USD', 'AXS-USD','MATIC-USD']
 
 # Create the dictionary
 crypto_dict = dict(zip(keys, values))
@@ -23,7 +23,7 @@ st.title("Crypto Buy/Sell Recommendation ({})".format(selected_option))
 #Create start and end dates
 
 
-default_start_date = datetime.datetime(2022, 1, 1)
+default_start_date = datetime.datetime.today()-365
 today = datetime.datetime.today()
 start_date = st.date_input("Select start date:",default_start_date)
 end_date = st.date_input("Select end date:",today)
