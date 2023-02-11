@@ -23,7 +23,7 @@ st.title("Crypto Buy/Sell Recommendation ({})".format(selected_option))
 #Create start and end dates
 
 
-default_start_date = datetime.datetime.today()-365
+default_start_date = datetime.datetime.today()-datetime.timedelta(days=365)
 today = datetime.datetime.today()
 start_date = st.date_input("Select start date:",default_start_date)
 end_date = st.date_input("Select end date:",today)
