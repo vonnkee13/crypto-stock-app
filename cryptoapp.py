@@ -7,8 +7,8 @@ import datetime
 
 
 # Map crypto to their yfinance tickers
-keys = ['Bitcoin', 'Ethereum', 'Shiba Inu','Dogecoin','Chainlink', 'SLP', 'XRP', 'Axie Infinity','Polygon']
-values = ['BTC-USD', 'ETH-USD', 'SHIB-USD','DOGE-USD','LINK-USD','SLP-USD', 'XRP-USD', 'AXS-USD','MATIC-USD']
+keys = ['Bitcoin', 'Ethereum', 'Shiba Inu','Dogecoin','Chainlink','Algorand', 'SLP', 'XRP', 'Axie Infinity','Polygon']
+values = ['BTC-USD', 'ETH-USD', 'SHIB-USD','DOGE-USD','LINK-USD','ALGO-USD','SLP-USD', 'XRP-USD', 'AXS-USD','MATIC-USD']
 
 # Create the dictionary
 crypto_dict = dict(zip(keys, values))
